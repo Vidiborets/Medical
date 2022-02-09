@@ -1,0 +1,93 @@
+@import '../../styles/shared.scss';
+
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg-color;
+  background-image: url(../../images/Hero.jpg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.containerHero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.logo {
+  margin-bottom: 50px;
+}
+.boxTitle {
+  font-family: $firstfonst, sans-serif;
+  color: #fff;
+  max-width: 475px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.boxLink {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.linkPhone {
+  text-decoration: none;
+  font-family: $secondaryfonts, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.3;
+  color: $text-color;
+  margin-top: 10px;
+  background-color: $white-text;
+  box-shadow: 0px 5px 30px rgba(0, 140, 255, 0.15);
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $white-text;
+    background-color: $text-color;
+  }
+}
+.linkEmail {
+  font-family: $secondaryfonts, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
+  background: $white-text;
+  box-shadow: 0px 5px 30px rgba(0, 140, 255, 0.15);
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 20px;
+  color: $text-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $white-text;
+    background-color: $text-color;
+  }
+}
