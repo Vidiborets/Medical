@@ -8,10 +8,10 @@ import book from '../../images/book.svg';
 const List = () => {
   return (
     <div className={s.listContainer}>
-      <h2 className={s.title}>
+      <h2 className={s.list_title}>
         Комплексна підготовка працівника до працевлаштування
       </h2>
-      <ul className={s.list}>
+      <ul className={s.list_item}>
         <li className={s.item}>
           <a href="/">
             <img src={doc} alt="doc" width={105} height={105} />
