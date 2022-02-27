@@ -18,43 +18,11 @@ const Form = props => {
   const [values, setValues] = useState(initialState);
   const [status, setStatus] = useState('');
   const [selected, setSelected] = useState(null);
+
   console.log(selected);
 
   const handleSubmit = e => {
     e.preventDefault();
-    //     // var xhr = new XMLHttpRequest;
-
-    //     // xhr.addEventListener('lod',()=>{
-    //     //     setStatus({
-    //     //         status:xhr.responseText
-    //     //     })
-    //     // })
-
-    //     // xhr.open('GET','http:')
-
-    // let formData = new FormData();
-    // formData.append("myfile", selected);
-    // formData.append("name",  setValues({
-    //             name:'',
-    //             phone:'',
-    //             email:'',
-    //             subject:'',
-    //             text:'',
-    //             selected:{},
-    //         }));
-    // formData.append("email", values.email);
-    // formData.append("text", values.phone);
-    // fetch('sendmail.php', {
-    //   method: "POST",
-    //   body: formData,
-    //   headers: {
-    //     "Content-Type": "multipart/form-data"
-    //   }
-    // }).then(response => {
-    //   response.json().then(data => {
-    //     console.log("SUCCESS" + data);
-    //   });
-    // });
     emailjs
       .send(
         'service_tirtu5c',
@@ -99,7 +67,9 @@ const Form = props => {
   };
 
   const resetForm = () => {
-    setValues(initialState);
+    setValues({
+      name: '',
+    });
   };
 
   const renderAlert = () => (
